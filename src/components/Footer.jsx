@@ -1,21 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import FooterNav from "./FooterNav";
 
 function Footer() {
   return (
     <>
-      <footer>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+      <footer className="footer ">
+        <div className="grid grid--3--cols footer-container">
+          <FooterNav />
+          <FooterNav />
+          <FooterNav />
+        </div>
       </footer>
     </>
   );
