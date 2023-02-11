@@ -9,7 +9,7 @@ const Card = ({ heading, para }) => {
         <div className="meal-content">
           <p className="meal-title">{heading}</p>
 
-          <p className="">{para}</p>
+          <p className="meal-para">{para}</p>
         </div>
       </div>
     </>

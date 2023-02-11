@@ -39,14 +39,7 @@ const Product = () => {
       <section className="product">
         <div className="container grid grid--3--cols ">
           {product.map((item, idx) => {
-            return (
-              <Card
-                key={idx}
-                heading={item.heading}
-                para={item.para}
-                img={item.img}
-              />
-            );
+            return <Card key={idx} heading={item.heading} para={item.para} />;
           })}
         </div>
       </section>
